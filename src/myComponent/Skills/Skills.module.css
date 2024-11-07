@@ -1,0 +1,20 @@
+.skillsBg {
+    height: auto;
+    overflow: hidden; 
+    position: relative;
+  
+  }
+   .skillsBg::before {
+    content: '';
+    position: absolute; /* Absolute positioning for pseudo-element */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover; /* Image ko poore area tak cover karein */
+    background-position: center; /* Image ko center karein */
+    background-color: #6010aa;
+    filter: blur(50px); /* Blur ka effect apply karein */
+   z-index: -1;
+  } 
+  

@@ -1,0 +1,21 @@
+.customImage {
+    /* Parent ko relative banana zaroori hai */
+   height: auto; /* Full viewport height, zaroorat ke mutabiq adjust karein */
+   overflow: hidden; /* Overflow se roknay ke liye */
+   position: relative;
+ }
+ 
+ .customImage::before {
+   content: '';
+   position: absolute; /* Absolute positioning for pseudo-element */
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-image: url('/assets/bg2.jpg'); /* Background image */
+   background-size: cover; /* Image ko poore area tak cover karein */
+   background-position: center; /* Image ko center karein */
+   filter: blur(10px); /* Blur ka effect apply karein */
+   z-index: -1; /* Isse content ke peeche rakhna zaroori hai */
+ }
+ 
