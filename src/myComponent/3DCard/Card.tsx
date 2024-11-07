@@ -21,7 +21,7 @@ export  default function MyCardDemo() {
           <Image
             src="/assets/first_blog.png"
             height={1000}
-            width="1000"
+            width={1000}
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
@@ -31,7 +31,7 @@ export  default function MyCardDemo() {
             translateZ={20}
             as={Link}
             href="https://ssr-api-s.vercel.app/"
-            target="__blank"
+            target="_blank"
             className="px-4 py-2 rounded-xl text-xs font-normal text-[#077a78] dark:text-white"
           >
             click to full view →
